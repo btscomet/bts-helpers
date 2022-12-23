@@ -26,5 +26,15 @@ class Str extends Base
         return str_replace($search, $replace, $subject);
     }
 
+    /**
+     * @param $haystack
+     * @param $needle
+     * @return bool
+     */
+    public static function endsWith($haystack, $needle): bool
+    {
+        return str_ends_with($haystack, $needle);
+    }
+
 
 }
