@@ -2,7 +2,7 @@
 
 namespace Src\Helpers;
 
-class Send
+class Send extends Base
 {
 
     /**
