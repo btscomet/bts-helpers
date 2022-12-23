@@ -11,10 +11,11 @@
     "authors": [
         {
             "name": "Juan Carlos Hernández Pérez",
-            "email": "j.carlos@btscomet.com"
+            "email": "contacto@btscomet.com"
         }
     ],
     "require": {
-        "php": "^8.0"
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.5"
     }
 }
