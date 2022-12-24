@@ -5,24 +5,24 @@ namespace Src\Helpers;
 class Send extends Base
 {
 
-    /**
-     * @param $from
-     * @param $to
-     * @param $subject
-     * @param $message
-     * @return int
-     */
-    public static function email($from, $to, $subject, $message): int
+    public $envConfig;
+
+    public function __construct()
     {
-        // Always set content-type when sending HTML email
-        $headers = "MIME-Version: 1.0" . "\r\n";
-        $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+        $envConfig = self::config();
+    }
 
-        // More headers
-        $headers .= 'From: <' . $from . '>' . "\r\n";
+    public static function configEmail()
+    {
 
-        mail($to, $subject, $message, $headers);
-        return 1;
+        try {
+            $transport = (new Swift_SmtpTransport('smtp.hostname', 25))
+                ->setUsername('xxxxxxxx')
+                ->setPassword('xxxxxxxx');
+
+        } catch (\Exception $e) {
+            return $e->getMessage();
+        }
     }
 
 }

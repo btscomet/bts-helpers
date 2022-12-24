@@ -5,7 +5,8 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Jchdezperez\\BtsHelpers\\": "src/"
+            "Src\\": "src/",
+            "Helpers\\": "src/Helpers"
         }
     },
     "authors": [
@@ -16,6 +17,8 @@
     ],
     "require": {
         "php": "^8.0",
-        "guzzlehttp/guzzle": "^7.5"
+        "guzzlehttp/guzzle": "^7.5",
+        "symfony/mailer": "^6.2",
+        "symfony/dotenv": "^6.2"
     }
 }
