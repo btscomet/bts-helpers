@@ -4,6 +4,7 @@
     "type": "library",
     "license": "MIT",
     "version": "dev-main",
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
             "Src\\": "src/",
