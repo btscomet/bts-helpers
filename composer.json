@@ -3,6 +3,7 @@
     "description": "Project dedicated to functionalities that can help you in your projects",
     "type": "library",
     "license": "MIT",
+    "version": "dev-main",
     "autoload": {
         "psr-4": {
             "Src\\": "src/",
